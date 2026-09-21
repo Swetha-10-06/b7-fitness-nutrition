@@ -1,0 +1,297 @@
+.programs-section {
+  padding: 110px 7%;
+
+  background: #111;
+
+  color: white;
+}
+
+
+/* HEADING */
+
+.programs-heading {
+  max-width: 750px;
+
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+.programs-heading > p:first-child {
+  margin-bottom: 14px;
+
+  color: #68b43c;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  letter-spacing: 4px;
+}
+
+.programs-heading h2 {
+  margin: 0;
+
+  font-size: clamp(38px, 4vw, 55px);
+
+  line-height: 1.05;
+
+  font-weight: 900;
+}
+
+.programs-heading h2 span {
+  color: #68b43c;
+}
+
+
+/* LINE */
+
+.heading-line {
+  width: 55px;
+
+  height: 3px;
+
+  margin: 22px auto;
+
+  background: #68b43c;
+}
+
+
+.programs-description {
+  max-width: 600px;
+
+  margin: auto;
+
+  color: #aaa;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+}
+
+
+/* GRID */
+
+.programs-grid {
+  max-width: 1200px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 25px;
+}
+
+
+/* CARD */
+
+.program-card {
+  min-height: 480px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 14px;
+
+  background-size: cover;
+
+  background-position: center;
+
+  transition: 0.4s;
+}
+
+
+/* IMAGES */
+
+.group-program {
+  background-image:
+    url("/group-fitness.jpg");
+}
+
+.personal-program {
+  background-image:
+    url("/personal-coaching.jpg");
+}
+
+
+/* OVERLAY */
+
+.program-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.90)
+    );
+}
+
+
+/* CONTENT */
+
+.program-content {
+  position: absolute;
+
+  left: 40px;
+
+  right: 40px;
+
+  bottom: 40px;
+
+  z-index: 2;
+}
+
+
+/* ICON */
+
+.program-icon {
+  width: 55px;
+
+  height: 55px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin-bottom: 20px;
+
+  border-radius: 50%;
+
+  background: #68b43c;
+
+  color: white;
+
+  font-size: 22px;
+}
+
+
+/* NUMBER */
+
+.program-number {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #bdbdbd;
+
+  font-size: 12px;
+
+  letter-spacing: 2px;
+}
+
+
+/* TITLE */
+
+.program-content h3 {
+  margin: 0 0 15px;
+
+  font-size: 38px;
+
+  line-height: 1;
+
+  font-weight: 900;
+}
+
+
+/* DESCRIPTION */
+
+.program-content p {
+  max-width: 440px;
+
+  margin-bottom: 22px;
+
+  color: #ddd;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* LINK */
+
+.program-content a {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  font-weight: 800;
+}
+
+.program-content a svg {
+  color: #68b43c;
+
+  transition: 0.3s;
+}
+
+.program-content a:hover svg {
+  transform: translateX(5px);
+}
+
+
+/* HOVER */
+
+.program-card:hover {
+  transform: translateY(-7px);
+}
+
+.program-card:hover .program-overlay {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.20),
+      rgba(50, 90, 30, 0.90)
+    );
+}
+
+
+/* TABLET */
+
+@media (max-width: 850px) {
+
+  .programs-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .programs-section {
+    padding: 75px 5%;
+  }
+
+  .program-card {
+    min-height: 420px;
+  }
+
+  .program-content {
+    left: 25px;
+    right: 25px;
+    bottom: 28px;
+  }
+
+  .program-content h3 {
+    font-size: 32px;
+  }
+
+}
